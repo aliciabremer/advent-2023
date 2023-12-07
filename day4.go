@@ -5,7 +5,7 @@ import (
 	"bufio"
 	"os"
 	"strings"
-	// "strconv"
+	"strconv"
 )
 
 
@@ -18,6 +18,26 @@ func abs(num int) int {
 
 func part1(scanner *bufio.Scanner) int {
 	sum := 0
+
+	scanner.Scan() 
+	s := scanner.Text()
+	s = s[6:]
+	
+	seeds_str := strings.Split(s, " ")
+	seeds := make([]int, len(seeds_str))
+
+	for i, num := range seeds_str {
+		seeds[i] = strconv.Atoi(num)
+	}
+
+	fmt.Println(seeds)
+	return
+
+	seedtosoil := make([][3]int, 0)
+	soiltofert := make([][3]int, 0)
+	fertilizertowater := make([][3]int, 0)
+	watertolight := make([])
+
 
 	for scanner.Scan() {
 		s := scanner.Text()
