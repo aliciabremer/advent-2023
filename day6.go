@@ -2,8 +2,8 @@ package main
 
 import (
     "fmt"
-	"bufio"
-	"os"
+	// "bufio"
+	// "os"
 	// "strings"
 	// "strconv"
 	"math"
@@ -60,10 +60,10 @@ func main() {
     sum := part1(times,dist)
 	fmt.Println(sum)
 
-	times := 59688274
+	time := 59688274
 
-	dist := 543102016641022
+	dist2 := 543102016641022
 
-	su2m := part2(times, dist)
+	su2m := part2(time, dist2)
 	fmt.Println(su2m)
 }
